@@ -19,6 +19,14 @@
             padding: 2em 0;
             text-align: center;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            position: relative;
+        }
+        header img {
+            width: 50px;
+            height: 50px;
+            position: absolute;
+            top: 10px;
+            left: 10px;
         }
         main {
             display: flex;
@@ -57,13 +65,12 @@
         }
         .photos {
             display: flex;
-            justify-content: space-around;
-            flex-wrap: wrap;
-            gap: 1em;
+            justify-content: space-between;
+            align-items: center;
             width: 100%;
         }
         .photos img {
-            width: 30%;
+            width: 45%;
             border-radius: 10px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         }
@@ -72,6 +79,7 @@
 <body>
     <header>
         <h1>Bem vinda ao Dia dos Namorados em Ilha Solteira!</h1>
+        <img src="https://upload.wikimedia.org/wikipedia/en/0/0d/Hello_Kitty_Character_Picture.png" alt="Hello Kitty">
     </header>
     <main>
         <div class="content">
@@ -88,8 +96,7 @@
         </div>
         <div class="photos">
             <img src="WhatsApp Image 2024-06-12 at 3.34.48 PM (1).jpeg" alt="Photo 1">
-            <img src="WhatsApp Image 2024-06-12 at 3.34.48 PM (2).jpeg" alt="Photo 2">
-            <img src="WhatsApp Image 2024-06-12 at 3.34.48 PM.jpeg" alt="Photo 3">
+            <img src="WhatsApp Image 2024-06-12 at 3.34.48 PM.jpeg" alt="Photo 2">
         </div>
     </main>
 </body>
