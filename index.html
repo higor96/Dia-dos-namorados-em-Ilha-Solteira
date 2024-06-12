@@ -1,23 +1,56 @@
----
-layout: default
----
-
-<div class="home">
-
-  <h1 class="page-heading">Posts</h1>
-
-  <ul class="post-list">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
-
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
-      </li>
-    {% endfor %}
-  </ul>
-
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
-
-</div>
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dia dos Namorados em Ilha Solteira</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #fff5f8;
+            color: #d32f2f;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #f44336;
+            color: white;
+            padding: 2em 0;
+            text-align: center;
+        }
+        main {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: calc(100vh - 4em);
+        }
+        .content {
+            max-width: 600px;
+            text-align: center;
+            background: white;
+            padding: 2em;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            margin-bottom: 1em;
+        }
+        p {
+            font-size: 1.2em;
+            margin: 0.5em 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Bem vinda ao Dia dos Namorados em Ilha Solteira!</h1>
+    </header>
+    <main>
+        <div class="content">
+            <p>Vista seu melhor pijama e traga sua fruta preferida para uma noite com fondue, filmes e muito amorzinho gostoso.</p>
+            <p><strong>Hora:</strong> 19hrs</p>
+            <p><strong>Local:</strong> Sala de estar</p>
+        </div>
+    </main>
+</body>
+</html>
