@@ -5,25 +5,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dia dos Namorados em Ilha Solteira</title>
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap');
         body {
-            font-family: 'Amatic SC', cursive;
-            background-color: #fff0f5;
-            color: #e91e63;
+            font-family: 'Patrick Hand', cursive;
+            background-color: #ffebee;
+            color: #d81b60;
             margin: 0;
             padding: 0;
         }
         header {
-            background-color: #e91e63;
+            background-color: #d81b60;
             color: white;
             padding: 2em 0;
             text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
         }
         main {
             display: flex;
+            flex-direction: column;
             justify-content: center;
             align-items: center;
-            height: calc(100vh - 4em);
             padding: 2em;
         }
         .content {
@@ -33,12 +34,13 @@
             padding: 2em;
             border-radius: 10px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin-bottom: 2em;
         }
         h1 {
             margin-bottom: 1em;
         }
         p {
-            font-size: 1.5em;
+            font-size: 1.3em;
             margin: 0.5em 0;
         }
         ul {
@@ -46,12 +48,23 @@
             padding: 0;
         }
         li {
-            font-size: 1.5em;
+            font-size: 1.3em;
             margin: 0.5em 0;
         }
         .heart {
-            color: #e91e63;
+            color: #d81b60;
             font-size: 1.5em;
+        }
+        .photos {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 1em;
+        }
+        .photos img {
+            width: 30%;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         }
     </style>
 </head>
@@ -71,6 +84,11 @@
                 <li>Espaço livre para sugestão: ____________</li>
             </ul>
             <p>Até breve! <span class="heart">❤️❤️❤️</span></p>
+        </div>
+        <div class="photos">
+            <img src="WhatsApp Image 2024-06-12 at 3.34.48 PM (1).jpeg" alt="Photo 1">
+            <img src="WhatsApp Image 2024-06-12 at 3.34.48 PM (2).jpeg" alt="Photo 2">
+            <img src="WhatsApp Image 2024-06-12 at 3.34.48 PM.jpeg" alt="Photo 3">
         </div>
     </main>
 </body>
